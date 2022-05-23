@@ -1,0 +1,217 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family:'PT Serif', Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  background-color: #FFF;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", Helvetica, Verdana, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.7em;
+  text-rendering: optimizeLegibility;
+  margin-top: 1.6em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.4em;
+  text-rendering: optimizeLegibility;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+p { margin: 1em 0; }
+* p:last-child { margin-bottom: 0; }
+
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+a {
+  color: #36538B;
+  text-decoration: none;
+}
+
+a:hover { color: #0f3647; }
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.clear { clear: both; }
+
+
+.site {
+  text-align: justify;
+  width: 45em;
+  margin: 3em auto 2em;
+  line-height: 1.5em;
+  clear: both;
+  margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 43.75em;
+}
+
+header h1 {
+  font-size: 2.5em;
+  letter-spacing: 0.08em;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+footer {
+  font-family: "PT Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-size: 0.9em;
+  margin: 4em 0 1em 0;
+  text-align: center;
+}
+
+footer, footer a {
+  color: #777;
+}
+
+footer ul li
+{
+  display: inline-block;
+  margin: 0 0.3em 0 0;
+}
+
+nav {
+  font-family: "PT Sans", Helvetica, Verdana, Arial, sans-serif;
+  font-size: 1.2em;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  padding: 0.75em 0;
+  margin: 0.5em 0 1.5em;
+}
+
+nav ul,
+footer ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li
+{
+  display: inline-block;
+  margin: 0 1em 0 0;
+}
+
+
+.post, .content {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+.post h1 a {
+  color: #000;
+}
+
+.post:last-child {
+  margin-bottom: 1em;
+}
+
+.post > h1 {
+  margin-bottom: 0.25em;
+  padding: 0;
+}
+
+.post > h6 {
+  color: #777;
+  font-size: 0.95em;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #fdf6e3;
+  padding: 7px;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #fdf6e3;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+pre, code {
+  font-family: "source code pro", monospace;
+  font-size: 0.95em;
+  line-height: 1.3em;
+  font-weight: 400;
+}
+
+.pagination {
+  font-family: "PT Sans", Helvetica, Verdana, Arial, sans-serif;
+  text-align: center;
+  margin-top: 3em;
+  border-top: 1px solid silver;
+  position: relative;
+}
+
+.previous {
+  position: absolute;
+  left: 0
+}
+
+.next {
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+
+@media screen and (max-width: 340px) {
+  .site {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+header, section, footer,
+aside, nav, article, figure {
+  display: block;
+}

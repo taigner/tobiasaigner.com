@@ -1,0 +1,29 @@
+---
+layout: front
+title: Tobias Aigner - Blog
+---
+
+<div class="posts">
+{% for post in paginator.posts %}
+<div class="post">
+  <h1><a href="{{post.url}}">{{post.title}}</a></h1>
+  <h6>{{post.date | date: "%B %e, %Y"}}</h6>
+
+  <div class="post-content">{{post.content}}</div>
+</div>
+{% endfor %}
+</div>
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a class="previous" href="{{ paginator.previous_page_path }}">Previous</a>
+  {% endif %}
+
+  {{ paginator.page }}/{{ paginator.total_pages }}
+
+  {% if paginator.next_page %}
+    <a class="next" href="{{ paginator.next_page_path }}">Next</a>
+  {% endif %}
+</div>
+{% endif %}
